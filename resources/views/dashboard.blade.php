@@ -395,7 +395,7 @@
       </div>
 
       <div class="view-all">
-        <button class="view-all-btn">Lihat Semua Artikel</button>
+        <button class="view-all-btn" onclick="window.location.href='/blog'">Lihat Semua Artikel</button>
       </div>
     </div>
   </section>
@@ -432,7 +432,7 @@
       <p class="text-muted">Dapatkan update terbaru, tips, dan promo menarik dari kami</p>
       <div class="d-flex justify-content-center mt-4">
         <a href="#" class="btn btn-outline-light me-3"><i class="bi bi-facebook"></i> Facebook</a>
-        <a href="#" class="btn btn-outline-light me-3"><i class="bi bi-twitter"></i> Twitter</a>
+        <a href="#" class="btn btn-outline-light me-3"><i class="bi bi-twitter"></i> X </a>
         <a href="#" class="btn btn-outline-light me-3"><i class="bi bi-instagram"></i> Instagram</a>
         <a href="#" class="btn btn-outline-light"><i class="bi bi-youtube"></i> YouTube</a>
       </div>

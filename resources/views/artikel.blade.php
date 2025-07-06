@@ -392,6 +392,12 @@
 
         <!-- Blog Item 3 -->
         <x-blog kategori="Update" waktu="3 hari lalu" judul="Patch Terbaru PUBG Mobile 2.1" isi="Apa saja yang baru di update PUBG Mobile versi 2.1? Simak perubahan dan fitur baru di sini." gambar="{{ asset('image/Ling-mobile-legends.webp') }}"/>
+
+        <x-blog kategori="Update" waktu="3 hari lalu" judul="Patch Terbaru PUBG Mobile 2.1" isi="Apa saja yang baru di update PUBG Mobile versi 2.1? Simak perubahan dan fitur baru di sini." gambar="{{ asset('image/Ling-mobile-legends.webp') }}"/>
+
+        <x-blog kategori="Update" waktu="3 hari lalu" judul="Patch Terbaru PUBG Mobile 2.1" isi="Apa saja yang baru di update PUBG Mobile versi 2.1? Simak perubahan dan fitur baru di sini." gambar="{{ asset('image/Ling-mobile-legends.webp') }}"/>
+        
+        <x-blog kategori="Update" waktu="3 hari lalu" judul="Patch Terbaru PUBG Mobile 2.1" isi="Apa saja yang baru di update PUBG Mobile versi 2.1? Simak perubahan dan fitur baru di sini." gambar="{{ asset('image/Ling-mobile-legends.webp') }}"/>
       </div>
 
       <div class="view-all">

@@ -13,6 +13,10 @@ Route::get('/blog', function () {
     return view('artikel');
 });
 
+Route::get('/admin-dashboard', function () {
+    return view('admin.dashboard');
+});
+
 Route::controller('UserController')->group(function () {
     Route::get('/login', [UserController::class, 'formLogin'])->name('login');
     Route::post('/login', [UserController::class, 'processLogin'])->name('processLogin');
