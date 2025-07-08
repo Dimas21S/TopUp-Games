@@ -6,6 +6,10 @@
   <title>Top-Up Game - Jual Voucher Game Murah dan Aman</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <script type="text/javascript"
+		src="https://app.sandbox.midtrans.com/snap/snap.js"
+    data-client-key="{{ config('services.midtrans.client_key') }}"></script>
   <style>
     body {
       background-color: #2c3e50;
@@ -130,11 +134,25 @@
   </div>
 </main>
 
+  <div id="snap-container"></div>
+
+
     <!-- Footer -->
     <div class="mt-5">
       <x-footer/>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script type="text/javascript">
+    // For example trigger on button clicked, or any time you need
+    var payButton = document.getElementById('pay-button');
+    payButton.addEventListener('click', function () {
+      // Trigger snap popup. @TODO: Replace TRANSACTION_TOKEN_HERE with your transaction token.
+      // Also, use the embedId that you defined in the div above, here.
+      window.snap.embed("{{ env('MIDTRANS_SERVER_KEY') }}", {
+        embedId: 'snap-container'
+      });
+    });
+  </script>
 </body>
 </html>
