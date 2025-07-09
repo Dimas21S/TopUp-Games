@@ -148,6 +148,18 @@
     var payButton = document.getElementById('pay-button');
     payButton.addEventListener('click', function () {
       // Trigger snap popup. @TODO: Replace TRANSACTION_TOKEN_HERE with your transaction token.
+      fetch('get-snap-token', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-TOKEN': '{{ csrf_token() }}'
+        },
+        body: JSON.stringify({
+          id_game: document.getElementById('id_game').value,
+          server: document.getElementById('server').value,
+          diskon: document.getElementById('diskon').value
+        })
+      })
       // Also, use the embedId that you defined in the div above, here.
       window.snap.embed("{{ env('MIDTRANS_SERVER_KEY') }}", {
         embedId: 'snap-container'

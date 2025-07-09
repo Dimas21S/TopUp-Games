@@ -6,7 +6,7 @@
       <i class="bi bi-gem display-4 text-primary mb-3"></i>
       <h5 class="card-title">{{ $title }}</h5>
       <p class="card-text">Harga: {{ $harga }}</p>
-      <a href="#" class="btn btn-primary">Beli Sekarang</a>
+      <a id="pay-button" class="btn btn-primary">Beli Sekarang</a>
     </div>
   </div>
 </div>
